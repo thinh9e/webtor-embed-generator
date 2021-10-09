@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Webtor Generator</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Webtor Generator</h1>
+  </header>
+  <main>
+    <form id="form-info" onchange="genEmbedCode()">
+      <label for="magnet-link">Magnet link</label>
+      <textarea name="magnet-link" id="magnet-link" cols="50" rows="5" required></textarea>
+      <label for="title">Title</label>
+      <input type="text" id="title" required>
+      <label for="Data path">Data path</label>
+      <input type="text" id="data-path" required>
+      <label for="subtitle">Subtitle</label>
+      <button type="button" id="btn-add-sub" class="btn-green" onclick="addSubtitle()">Add</button>
+      <div id="subtitle-list"></div>
+    </form>
+    <section id="result-frame">
+      <label for="embed-code">Embed code</label>
+      <textarea name="embed-code" id="embed-code" cols="50" rows="5"></textarea>
+      <div id="btn-action">
+        <button type="reset" class="btn-red" onclick="resetForm()">Reset</button>
+        <button type="button" class="btn-blue" onclick="copyCodeEmbed()">Copy</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul id="reference-link">
+      <li><small>&copy; Thinh Nguyen</small></li>
+      <li><a href="https://webtor.io" target="_blank">webtor.io</a></li>
+      <li><a href="https://github.com/thinhcode/webtor-embed-generator" target="_blank">source</a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

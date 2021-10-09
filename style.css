@@ -1,0 +1,107 @@
+html, body {
+    background-color: #212121;
+    color: #F6F6F6;
+    font-family: sans-serif;
+    padding: .25rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+label, textarea, input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+label {
+    color: #6D9886;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+textarea, input {
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem;
+}
+
+button {
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    border: none;
+    font-weight: 700;
+}
+
+button:hover {
+    filter: brightness(80%);
+    transition: all .2s;
+}
+
+.subtitle-item {
+    display: flex;
+    margin-top: .5rem;
+}
+
+.subtitle-item select {
+    border-radius: .25rem;
+    margin-right: .25rem;
+    padding: .25rem;
+}
+
+.subtitle-item input {
+    width: 100%;
+    margin-right: .25rem;
+}
+
+.btn-green {
+    background-color: #77D970;
+}
+
+.btn-red {
+    background-color: #FF7878;
+}
+
+.btn-blue {
+    background-color: #63B4B8;
+}
+
+.btn-white {
+    background-color: #F6F6F6;
+}
+
+#btn-action {
+    display: inline-block;
+    margin-top: .5rem;
+}
+
+footer {
+    border-top: .125rem solid #F6F6F6;
+    margin-top: 1rem;
+}
+
+#reference-link {
+    padding: 0;
+    text-align: right;
+}
+
+#reference-link li {
+    display: inline-block;
+}
+
+#reference-link li:not(:last-child) {
+    margin-right: .5rem;
+}
+
+#reference-link a {
+    color: #63B4B8;
+    text-decoration: none;
+}
+
+#reference-link a:hover {
+    text-decoration: underline;
+    filter: brightness(80%);
+    transition: all .2s;
+}
