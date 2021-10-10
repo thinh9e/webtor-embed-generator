@@ -30,6 +30,7 @@ function genEmbedCode() {
     let magnetLink = document.getElementById("magnet-link").value;
     let title = document.getElementById("title").value;
     let dataPath = document.getElementById("data-path").value;
+    let poster = document.getElementById("poster").value;
     let subtitle = "";
     let subtitleList = document.getElementById("subtitle-list").children;
     for (let i = 0; i < subtitleList.length; i++) {
@@ -45,9 +46,10 @@ function genEmbedCode() {
 <track srclang="${selectValue}" label="${selectText}" default src="${inputValue}">`;
         }
     }
-    let code = `
-<video controls src="${magnetLink}" data-title="${title}" data-path="${dataPath}">${subtitle}</video>
-<script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" charset="utf-8" async></script>`;
+    let code = `<video controls src="${magnetLink}" poster="${poster}" data-title="${title}" ` +
+        `data-path="${dataPath}" width="100%">${subtitle}</video>` +
+        `<script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" ` +
+        `charset="utf-8" async></script>`;
     if (magnetLink != "" && title != "" && dataPath != "") {
         embedCode.innerText = code;
     }
