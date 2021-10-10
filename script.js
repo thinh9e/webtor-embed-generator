@@ -14,7 +14,7 @@ function addSubtitle() {
     <option value="vi">Tiếng Việt</option>
     <option value="en">English</option>
 </select>
-<input type="url" name="subtitle-link-${subtitleNumber}" id="subtitle-link-${subtitleNumber}">
+<input type="url" name="subtitle-link-${subtitleNumber}" id="subtitle-link-${subtitleNumber}" placeholder="https://...">
 <button type="button" class="btn-red" onclick="removeSubtitle(${subtitleNumber})">Remove</button>`;
     subtitleList.appendChild(subtitleItem);
     genEmbedCode();
